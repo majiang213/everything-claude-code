@@ -1363,6 +1363,36 @@ This project is free and open source. Sponsors help keep it maintained and growi
 
 ---
 
+## OpenClaw Integration
+
+Run ECC commands in OpenClaw (WhatsApp, Telegram, Discord gateway):
+
+```bash
+# Install plugin
+openclaw plugins install ./openclaw/plugin
+
+# Create all 37 agents
+./openclaw/agents/create-agents.sh
+
+# Restart gateway
+openclaw gateway restart
+
+# Use commands
+/gan_build "Build a todo app"
+/code_review
+/e2e
+/context_budget
+```
+
+**Features:**
+- 37 independent agents (each ECC agent → isolated OpenClaw agent)
+- 86 commands (all ECC commands available)
+- Multi-channel access (WhatsApp, Telegram, Discord, etc.)
+
+**Documentation:** See [`openclaw/`](./openclaw/) for full integration guide.
+
+---
+
 ## Links
 
 - **Shorthand Guide (Start Here):** [The Shorthand Guide to Everything Claude Code](https://x.com/affaanmustafa/status/2012378465664745795)
