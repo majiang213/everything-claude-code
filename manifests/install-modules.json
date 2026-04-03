@@ -117,11 +117,14 @@
         "skills/backend-patterns",
         "skills/coding-standards",
         "skills/compose-multiplatform-patterns",
+        "skills/csharp-testing",
         "skills/cpp-coding-standards",
         "skills/cpp-testing",
+        "skills/dart-flutter-patterns",
         "skills/django-patterns",
         "skills/django-tdd",
         "skills/django-verification",
+        "skills/dotnet-patterns",
         "skills/frontend-patterns",
         "skills/frontend-slides",
         "skills/golang-patterns",
@@ -137,6 +140,7 @@
         "skills/laravel-tdd",
         "skills/laravel-verification",
         "skills/mcp-server-patterns",
+        "skills/nestjs-patterns",
         "skills/perl-patterns",
         "skills/perl-testing",
         "skills/python-patterns",
@@ -282,10 +286,12 @@
       "description": "Business, writing, market, and investor communication skills.",
       "paths": [
         "skills/article-writing",
+        "skills/brand-voice",
         "skills/content-engine",
         "skills/investor-materials",
         "skills/investor-outreach",
         "skills/lead-intelligence",
+        "skills/social-graph-ranker",
         "skills/market-research"
       ],
       "targets": [
@@ -302,6 +308,33 @@
       "defaultInstall": false,
       "cost": "heavy",
       "stability": "stable"
+    },
+    {
+      "id": "operator-workflows",
+      "kind": "skills",
+      "description": "Connected-app operator workflows for setup audits, billing operations, program tracking, Google Workspace, and network optimization.",
+      "paths": [
+        "skills/connections-optimizer",
+        "skills/customer-billing-ops",
+        "skills/google-workspace-ops",
+        "skills/jira-integration",
+        "skills/project-flow-ops",
+        "skills/workspace-surface-audit"
+      ],
+      "targets": [
+        "claude",
+        "cursor",
+        "antigravity",
+        "codex",
+        "opencode",
+        "codebuddy"
+      ],
+      "dependencies": [
+        "platform-configs"
+      ],
+      "defaultInstall": false,
+      "cost": "medium",
+      "stability": "beta"
     },
     {
       "id": "social-distribution",
@@ -329,10 +362,12 @@
     {
       "id": "media-generation",
       "kind": "skills",
-      "description": "Media generation and AI-assisted editing skills.",
+      "description": "Media generation, technical explainers, and AI-assisted editing skills.",
       "paths": [
         "skills/fal-ai-media",
+        "skills/manim-video",
         "skills/remotion-video-creation",
+        "skills/ui-demo",
         "skills/video-editing",
         "skills/videodb"
       ],
